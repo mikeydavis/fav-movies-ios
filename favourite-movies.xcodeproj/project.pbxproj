@@ -12,6 +12,8 @@
 		00AF6FA8206D53F2009EF7DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00AF6FA6206D53F2009EF7DB /* Main.storyboard */; };
 		00AF6FAA206D53F2009EF7DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AF6FA9206D53F2009EF7DB /* Assets.xcassets */; };
 		00AF6FAD206D53F2009EF7DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00AF6FAB206D53F2009EF7DB /* LaunchScreen.storyboard */; };
+		00AF6FB5206D5982009EF7DB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF6FB4206D5982009EF7DB /* CustomTableViewCell.swift */; };
+		00C5365E206E4B0300987848 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5365D206E4B0300987848 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		00AF6FA9206D53F2009EF7DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00AF6FAC206D53F2009EF7DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00AF6FAE206D53F2009EF7DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00AF6FB4206D5982009EF7DB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		00C5365D206E4B0300987848 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 				00AF6FA2206D53F2009EF7DB /* AppDelegate.swift */,
 				00AF6FA4206D53F2009EF7DB /* ViewController.swift */,
 				00AF6FA6206D53F2009EF7DB /* Main.storyboard */,
+				00AF6FB4206D5982009EF7DB /* CustomTableViewCell.swift */,
 				00AF6FA9206D53F2009EF7DB /* Assets.xcassets */,
 				00AF6FAB206D53F2009EF7DB /* LaunchScreen.storyboard */,
 				00AF6FAE206D53F2009EF7DB /* Info.plist */,
+				00C5365D206E4B0300987848 /* Movie.swift */,
 			);
 			path = "favourite-movies";
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00AF6FB5206D5982009EF7DB /* CustomTableViewCell.swift in Sources */,
 				00AF6FA5206D53F2009EF7DB /* ViewController.swift in Sources */,
+				00C5365E206E4B0300987848 /* Movie.swift in Sources */,
 				00AF6FA3206D53F2009EF7DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "favourite-movies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.midax.favourite-movies";
@@ -272,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "favourite-movies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.midax.favourite-movies";
@@ -299,6 +309,7 @@
 				00AF6FB3206D53F2009EF7DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
