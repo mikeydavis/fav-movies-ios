@@ -14,6 +14,13 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
     
     @IBOutlet var mainTableView: UITableView!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "searchMoviesSegue" {
+            let controller = segue.destination as! SearchViewController
+            controller.mainViewDelegate = self
+        }
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return favMovies.count
@@ -48,13 +55,11 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
         }).resume()
     }
     
-
-    
-    
     override func viewWillAppear(_ animated: Bool) {
         mainTableView.reloadData()
         if (favMovies.count == 0){
-            favMovies.append(Movie(id: "01", title: "Batman Begins", year: "2005", imageUrl: "https://i.kinja-img.com/gawker-media/image/upload/s--AN7YYUbh--/c_scale,fl_progressive,q_80,w_800/y94tqd0evm9hwxvm9qim.png", plot: "caped crusaider"))
+            favMovies.append(Movie(id: "01", title: "Batman Begins", year: "2005", imageUrl: "https://i.kinja-img.com/gawker-media/image/upload/s--AN7YYUbh--/c_scale,fl_progressive,q_80,w_800/y94tqd0evm9hwxvm9qim.png"))
+            //favMovies.append(Movie(id: "02", title: "Star wars", year: "1977", imageUrl: "", plot: "a new hope"))
         }
         super.viewWillAppear(animated)
         
